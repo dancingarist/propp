@@ -1,10 +1,13 @@
 import streamlit as st
 import csv
+
 st.title("ボタンだけのアプリ")
 
+# ① 最初のボタン
 if st.button("押してね"):
     st.write("ボタンが押されました！")
 
+# ② CSV読み込み
 CSV_FILE = "story.csv"
 all_rows = []
 
@@ -17,9 +20,12 @@ except FileNotFoundError:
     st.error("CSVファイルが見つかりません。")
     st.stop()
 
-
+# ③ CSV表示用ボタン
 if st.button("おせ"):
-    st.write("ボタンが押されました！")
+    st.write("CSVファイルの中身はこちらです")
+    st.dataframe(all_rows)   # ← 表形式で表示
+
+
 
 
 
