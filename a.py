@@ -18,7 +18,7 @@ except FileNotFoundError:
     st.stop()
 
 
-if st.button(all_rows[0]):
+if st.button("おせ"):
     st.write("ボタンが押されました！")
 
 
