@@ -1,6 +1,6 @@
-import csv
 import streamlit as st
 
-CSV_FILE = "rasyou2.csv"
+st.title("ボタンだけのアプリ")
 
-print(CSV_FILE)
+if st.button("押してね"):
+    st.write("ボタンが押されました！")
