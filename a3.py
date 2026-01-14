@@ -174,4 +174,3 @@ st.markdown(f"**【機能説明】**  \n{selected['機能説明']}")
 st.markdown(f"**【場面説明】**  \n{selected['場面説明']}")
 st.markdown(f"**【対象人物】**  \n{selected['対象人物']}")
 st.markdown(f"**【本文要約】**  \n{selected['本文要約']}")
-
