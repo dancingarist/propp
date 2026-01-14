@@ -99,7 +99,7 @@ st.markdown(f"**選択中の章：第 {selected_chapter} 章**")
 # 章要約表示
 # ======================
 st.markdown("---")
-st.subheader("📝 章の要約")
+st.subheader("📝ChatGPTによる章の要約")
 
 summary_text = load_chapter_summary(work, selected_chapter)
 
@@ -174,3 +174,4 @@ st.markdown(f"**【機能説明】**  \n{selected['機能説明']}")
 st.markdown(f"**【場面説明】**  \n{selected['場面説明']}")
 st.markdown(f"**【対象人物】**  \n{selected['対象人物']}")
 st.markdown(f"**【本文要約】**  \n{selected['本文要約']}")
+
